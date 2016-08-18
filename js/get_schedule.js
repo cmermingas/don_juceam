@@ -3,7 +3,11 @@ $(function () {
         init()
     };
 
-    var spreadsheet_key = '17LGyF0rlpo_o6hCun6X7Q01h3cgVdb0SENoijFuNdT0';
+    //var spreadsheet_key = '17LGyF0rlpo_o6hCun6X7Q01h3cgVdb0SENoijFuNdT0';
+    var spreadsheet_key = '1AkuZ0E0XScWjpwjYGPTnUm9YBYr0RQTKE-58wyrKIls';
+    const DATE_COLUMN = 'date';
+    const EVENT_COLUMN = 'event';
+    const LOCATION_COLUMN = 'location';
 
     function init() {
         Tabletop.init({
@@ -52,9 +56,9 @@ $(function () {
         data.reverse();
 
         for (i = 0; i < data.length; i++) {
-            event_date = new Date(data[i].date);
-            event_name = data[i].event;
-            event_location = data[i].location;
+            event_date = new Date(data[i][DATE_COLUMN]);
+            event_name = data[i][EVENT_COLUMN];
+            event_location = data[i][LOCATION_COLUMN];
 
             if (!isNaN(event_date.getFullYear())) {
                 current_year = event_date.getFullYear();
