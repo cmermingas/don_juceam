@@ -63,6 +63,26 @@ $debug: false;
   }
 }
 
+//.main-content {
+//  background: url('../img/musical_abstract_background.jpg') no-repeat center center fixed;
+//  -webkit-background-size: cover;
+//  -moz-background-size: cover;
+//  -o-background-size: cover;
+//  background-size: cover;
+//  opacity: .5;
+//}
+
+body {
+  background: url('../img/music_pattern.jpg') repeat;
+  font-size: 16px;
+  //background-repeat: repeat;
+  //-ms-background-size: cover;
+  //-o-background-size: cover;
+  //-moz-background-size: cover;
+  //-webkit-background-size: cover;
+  //background-size: cover;
+}
+
 .fa-huge {
   font-size: 30vw;
 }
@@ -245,6 +265,9 @@ footer {
   height: auto;
 }
 
+.panel-title {
+  font-size: 22pt;
+}
 .package-items {
   margin-top: 20px;
 }
