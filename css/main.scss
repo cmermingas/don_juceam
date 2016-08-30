@@ -124,9 +124,14 @@ h1 {
 
   color: white;
 
-  //a {
-  //  color: $color-light-gray;
-  //}
+  a {
+    color: $color-light-gray;
+    text-decoration: underline !important;
+  }
+
+  a:hover {
+    color: white;
+  }
 }
 
 
