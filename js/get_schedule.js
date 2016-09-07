@@ -25,27 +25,35 @@ $(function () {
         return MONTHS[d.getMonth()] + ' ' + d.getDate();
     }
 
+    function startSchedule() {
+        schedule_div.append('<table class="table" id="schedule-table">');
+    }
+
+    function endSchedule() {
+        schedule_div.append('</table>');
+    }
+
     function appendRowToTable(event_name, event_date, event_location) {
-        var year = event_date.getFullYear();
-
-        $('#' + year).append('<tr><td>' +
-            dateShortFormat(event_date)+ '</td><td>' +
+        // var year = event_date.getFullYear();
+        $('#schedule-table').append(
+            '<tr><td>' +
+            dateShortFormat(event_date).replace(' ', '&nbsp;') + '</td><td>' +
             event_name + '</td><td>' +
-            event_location + '</td></tr>');
-
+            event_location + '</td></tr>'
+        );
     }
 
     var schedule_div = $('#schedules');
 
     function startNewYear(year) {
-        schedule_div.append(
-            '<h3>' + year + '</h3>' +
-            '<table id="' + year + '" class="table table-striped">' +
+        $('#schedule-table').append(
+            '<tr><td colspan="3"><h3>' + year + '</h3></td></tr>' +
+            // '<table id="' + year + '" class="table table-striped">' +
             '<tr><th>Day</th><th>Event</th><th>Location</th></tr>');
     }
 
     function endYear() {
-        schedule_div.append('</table>');
+        // schedule_div.append('</table>');
     }
 
 
@@ -54,6 +62,8 @@ $(function () {
 
         previous_year = null;
         data.reverse();
+
+        startSchedule();
 
         for (i = 0; i < data.length; i++) {
             event_date = new Date(data[i][DATE_COLUMN]);
@@ -77,9 +87,11 @@ $(function () {
             }
         }
 
-        if (previous_year !== null) {
-            endYear();
-        }
+        // if (previous_year !== null) {
+        //     endYear();
+        // }
+
+        endSchedule();
     }
 
 });

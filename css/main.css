@@ -19,6 +19,9 @@ h1 {
   background-color: #1a1a1a;
   color: white; }
 
+.larger {
+  font-size: larger; }
+
 .carousel {
   background-color: #1a1a1a;
   position: relative;
