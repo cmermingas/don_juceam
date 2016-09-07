@@ -37,7 +37,7 @@ $(function () {
         // var year = event_date.getFullYear();
         $('#schedule-table').append(
             '<tr><td>' +
-            dateShortFormat(event_date) + '</td><td>' +
+            dateShortFormat(event_date).replace(' ', '&nbsp;') + '</td><td>' +
             event_name + '</td><td>' +
             event_location + '</td></tr>'
         );
