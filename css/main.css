@@ -6,124 +6,170 @@
     - Orange: #ff9900
 */
 body {
-  background: url("../img/music_pattern.jpg") repeat;
-  font-size: 16px; }
+    background: url("../img/music_pattern.jpg") repeat;
+    font-size: 16px;
+}
 
 .fa-huge {
-  font-size: 30vw; }
+    font-size: 30vw;
+}
 
 h1 {
-  margin: 0;
-  padding: 20px;
-  width: 100%;
-  background-color: #1a1a1a;
-  color: white; }
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+}
 
 .larger {
-  font-size: larger; }
+    font-size: larger;
+}
 
 .carousel {
-  background-color: #1a1a1a;
-  position: relative;
-  padding: 10px;
-  /* Shows as a border around the carousel */ }
-  .carousel .carousel-caption {
+    background-color: #1a1a1a;
+    position: relative;
+    padding: 10px;
+    /* Shows as a border around the carousel */
+}
+
+.carousel .carousel-caption {
     background: #15a6a9;
     background: -webkit-radial-gradient(#15a6a9, rgba(21, 166, 169, 0) 60%, transparent 100%);
     background: -o-radial-gradient(#15a6a9, rgba(21, 166, 169, 0) 60%, transparent 100%);
     background: -moz-radial-gradient(#15a6a9, rgba(21, 166, 169, 0) 60%, transparent 100%);
     background: radial-gradient(#15a6a9, rgba(21, 166, 169, 0) 60%, transparent 100%);
-    color: #9aebf6; }
+    color: #9aebf6;
+}
 
 .lead-ribbon {
-  margin-bottom: 0;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background: linear-gradient(to right, #9aebf6, #1a1a1a 20%, #1a1a1a 80%, #9aebf6 100%);
-  color: white; }
-  .lead-ribbon a {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(to right, #9aebf6, #1a1a1a 20%, #1a1a1a 80%, #9aebf6 100%);
+    color: white;
+}
+
+.lead-ribbon a {
     color: #69d8d6;
-    text-decoration: underline !important; }
-  .lead-ribbon a:hover {
-    color: white; }
+    text-decoration: underline !important;
+}
+
+.lead-ribbon a:hover {
+    color: white;
+}
 
 .call-to-action {
-  margin: 20px 10px 0 20px;
-  padding: 0 20px 0 20px; }
-  .call-to-action .cta-title {
+    margin: 20px 10px 0 20px;
+    padding: 0 20px 0 20px;
+}
+
+.call-to-action .cta-title {
     border-style: none;
     border-radius: 30px 30px 0 0;
     margin: 0;
     padding: 10px 0 10px 0;
     background-color: #166c96;
-    color: white; }
-  .call-to-action .cta-content {
+    color: white;
+}
+
+.call-to-action .cta-content {
     border-style: solid;
     border-width: 1px;
     border-color: #166c96;
     border-radius: 0 0 30px 30px;
-    padding: 10px; }
-    .call-to-action .cta-content h3 {
-      color: #166c96; }
+    padding: 10px;
+}
+
+.call-to-action .cta-content h3 {
+    color: #166c96;
+}
 
 .box-shadow {
-  box-shadow: 3px 3px 1px #888888; }
+    box-shadow: 3px 3px 1px #888888;
+}
 
 .inset-block {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 20px; }
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
 
 .round-border-block {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 30px;
-  border-color: #166c96; }
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #166c96;
+}
 
 .services-list {
-  margin-bottom: 20px; }
-  .services-list ul {
-    padding-left: 0 !important; }
+    margin-bottom: 20px;
+}
+
+.services-list ul {
+    padding-left: 0 !important;
+}
 
 .videos-list {
-  margin-top: 20px; }
-  .videos-list .row {
-    margin-bottom: 20px; }
-  .videos-list .video {
-    margin-bottom: 20px; }
+    margin-top: 20px;
+}
+
+.videos-list .row {
+    margin-bottom: 20px;
+}
+
+.videos-list .video {
+    margin-bottom: 20px;
+}
 
 footer {
-  margin-top: 15px; }
+    margin-top: 15px;
+}
 
 .full-width {
-  width: 100%;
-  height: auto; }
+    width: 100%;
+    height: auto;
+}
 
 .panel-title {
-  font-size: 22pt; }
+    font-size: 22pt;
+}
 
 .package-items {
-  margin-top: 20px; }
+    margin-top: 20px;
+}
 
 .package-items dt {
-  float: left;
-  clear: left; }
+    float: left;
+    clear: left;
+}
 
 .package-items dt:after {
-  content: "\2014"; }
+    content: "\2014";
+}
 
 .package-description p {
-  margin-top: 20px; }
+    margin-top: 20px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
 
 @media (max-width: 767px) {
-  .embed-responsive {
-    margin-bottom: 20px; } }
+    .embed-responsive {
+        margin-bottom: 20px;
+    }
+}
+
 @media (min-width: 768px) {
-  .package-description {
-    min-height: 781px; } }
+    .package-description {
+        min-height: 781px;
+    }
+}
 
 /*# sourceMappingURL=main.css.map */
